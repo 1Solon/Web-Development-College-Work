@@ -1,36 +1,13 @@
-function showQS1() {
-    var x = document.getElementById("q1");
+function showQS(questionNo) {
+    var x = document.getElementById("q"+questionNo);
     if (x.style.display === "none") {
       x.style.display = "block";
-      document.getElementById("b1").innerHTML="Hide Answer";
+      document.getElementById("b"+questionNo).innerHTML="Hide Answer";
     } else {
       x.style.display = "none";
-      document.getElementById("b1").innerHTML="Show Answer";
+      document.getElementById("b"+questionNo).innerHTML="Show Answer";
     }      
 }
-
-function showQS2() {
-    var x = document.getElementById("q2");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      document.getElementById("b2").innerHTML="Hide Answer";
-    } else {
-      x.style.display = "none";
-      document.getElementById("b2").innerHTML="Show Answer";
-    }      
-}
-
-function showQS3() {
-    var x = document.getElementById("q3");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      document.getElementById("b3").innerHTML="Hide Answer";
-    } else {
-      x.style.display = "none";
-      document.getElementById("b3").innerHTML="Show Answer";
-    }      
-}
-
 function swapStyleSheet(){
     var x = document.getElementById("styleSwitchDiv");
     if (x.style.display === "none") {
