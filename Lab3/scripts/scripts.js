@@ -1,21 +1,27 @@
-function showQS(tag, message) {
+function showQS(message) {
 
-  var answer = document.createElement("div");
-
-  if (answerChild == null){
-    answer.getElementById("answers").removeChild(answer);
-    var answerChild = document.createTextNode(message);
-    answer.appendChild(answerChild);
-
-  } else {
-    var answerChild = document.createTextNode(message);
-    answer.appendChild(answerChild);
+  let check = document.getElementById("element")
+  if (check != null){
+    check.parentElement.removeChild(check);
   }
-  document.getElementById("answers").appendChild(answer);
+
+  let element = document.createElement("div");
+  element.setAttribute("id", "element");
+  element.innerHTML = message + "<br><br>";
+
+  let button = document.createElement("button");
+  button.innerHTML = "Close Question"
+  button.onclick = function () {
+    let check = document.getElementById("element");
+    check.parentElement.removeChild(check);
+  }
+  element.appendChild(button);
+  
+  document.body.insertBefore(element, document.getElementById("answers"));
 }
 
 function swapStyleSheet(){
-    var x = document.getElementById("styleSwitchDiv");
+    let x = document.getElementById("styleSwitchDiv");
     if (x.style.display === "none") {
       x.style.display = "block";
       document.getElementById("styleSwitchButton").innerHTML="Creative";
