@@ -1,5 +1,6 @@
 function showQS(message) {
 
+  //Checks if the answer element exists, if so, delete it
   let check = document.getElementById("element")
   if (check != null){
     check.parentElement.removeChild(check);
