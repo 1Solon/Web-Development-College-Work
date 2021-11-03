@@ -1,0 +1,21 @@
+.tudLogo {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  clear: both;
+}
+
+ .pageHeader {
+     display: block;
+     margin-bottom: 1rem;
+     margin: auto;
+     width: 95%;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+
+table, th, td{
+    border: 1px solid black;
+}

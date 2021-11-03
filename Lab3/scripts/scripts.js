@@ -6,10 +6,12 @@ function showQS(message) {
     check.parentElement.removeChild(check);
   }
 
+  //Creates div containing some sample text
   let element = document.createElement("div");
   element.setAttribute("id", "element");
   element.innerHTML = message + "<br><br>";
 
+  //Creates button to close the div
   let button = document.createElement("button");
   button.innerHTML = "Close Question"
   button.onclick = function () {
